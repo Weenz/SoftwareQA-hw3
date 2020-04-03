@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h2>Welcome to Retirement Calculator</h2>
+
+<hr noshade><br>
+
+<form action="/RetireResults">
+
+    Enter your age:
+    <input type="number" name="age"><br>
+    Enter your annual salary:
+    <input type="number" name="aSalary"><br>
+    Enter your percentage saved:
+    <input type="number" name="percentSaved"><br>
+    Enter your savings goal:
+    <input type="number" name="userGoal"><br><br>
+
+    <input type="submit" value="Calculate!">
+
+
+</form>
+{% endblock content %}

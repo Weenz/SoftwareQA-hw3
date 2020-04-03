@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h2>Welcome to BMI Calculator</h2>
+
+<hr noshade><br>
+
+<form action="/BMIresults">
+    Enter the feet part of your height:
+    <input type="number" name="feet"><br>
+
+    Enter the inches part of your height:
+    <input type="number" name="inches"><br>
+
+    Enter your weight:
+    <input type="number" name="weight"><br><br>
+
+    <input type="submit" value="Calculate">
+</form>
+
+{% endblock content %}
