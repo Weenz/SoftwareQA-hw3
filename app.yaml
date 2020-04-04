@@ -1,1 +1,5 @@
 runtime: python37
+service: hw3-calc
+basic_scaling:
+  max_instance: 10
+  idle_timeout: 10m
