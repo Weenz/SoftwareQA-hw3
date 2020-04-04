@@ -1,6 +1,3 @@
 runtime: python37
 service: hw3-calc
 env: flex
-basic_scaling:
-  max_instance: 10
-  idle_timeout: 10m
