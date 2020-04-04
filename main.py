@@ -57,7 +57,7 @@ def RetireCalc():
         return render_template('RetireCalc.html', error="Error: Please enter a valid number in all inputs below")
 
     if ((request.args['aSalary'] == '0') or (request.args['percentSaved'] == '0')):
-        return render_template('RetireCalc.html', error="Error: Please enter a value larger than zero for annual salary")
+        return render_template('RetireCalc.html', error="Error: Please enter a value larger than zero.")
 
         
 
