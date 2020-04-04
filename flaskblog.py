@@ -21,6 +21,10 @@ def calculator():
 
 @app.route('/BMIresults')
 def BMI():
+    if((request.args['feet'] == '') or (request.args['inches'] == '') or (request.args['weight'] == '')):
+        return render_template('BMICalc.html', error="Error: Please enter a valid number in all inputs below")
+
+
     feet = float(request.args['feet'])
     inches = float(request.args['inches'])
     weight = float(request.args['weight'])
@@ -49,6 +53,11 @@ def BMI():
 
 @app.route('/RetireResults')
 def RetireCalc():
+    if (((request.args['age']) == '') or ((request.args['aSalary']) == '') or ((request.args['percentSaved'] =='') or ((request.args['userGoal']) == ''))):
+        return render_template('RetireCalc.html', error="Error: Please enter a valid number in all inputs below")
+
+        
+
     age = int(request.args['age'])
     aSalary = int(request.args['aSalary'])
     percentSaved = int(request.args['percentSaved'])
